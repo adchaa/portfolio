@@ -64,7 +64,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  margin-top: 200px;
+  margin-top: 300px;
   margin-left: 15%;
 }
 .text {
@@ -151,7 +151,7 @@ body {
   text-align: center;
 }
 .space {
-  margin-top: 30vh;
+  margin-top: 20vh;
   margin-bottom: 60px;
 }
 .skills-details {
@@ -346,7 +346,7 @@ body {
   transition-delay: 0.75s;
 }
 .name {
-  color: #002f45;
+  color: rgb(241, 240, 240);
 }
 .list-tools {
   position: relative;
@@ -393,4 +393,60 @@ body {
 .button:hover {
   color: #fff;
   transition-delay: 0.5s;
+}
+#checkbox {
+  display: none;
+}
+.hamburger {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.line {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 3px;
+  transition: transform 0.25s, opacity 0.35s;
+}
+.line-top {
+  transform: translateY(-9px);
+}
+.line-bottom {
+  transform: translateY(9px);
+}
+#checkbox:checked ~ .line-top {
+  transform: rotate(45deg);
+}
+#checkbox:checked ~ .line-bottom {
+  transform: rotate(-45deg);
+}
+#checkbox:checked ~ .line-mid {
+  opacity: 0;
+}
+.hamburger {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .lo {
+    margin-right: 0;
+  }
+  .header {
+    justify-content: space-between;
+    padding: 0 40px 0 40px;
+    width: calc(100% - 80px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
 }
