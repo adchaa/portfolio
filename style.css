@@ -507,3 +507,15 @@ body {
     height: 25px;
   }
 }
+.reveal-top {
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all ease-out 0.6s;
+}
+.list.reveal-top {
+  transition-delay: 0.3s;
+}
+.reveal-top.active {
+  transform: translateY(0);
+  opacity: 1;
+}

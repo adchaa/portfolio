@@ -8,6 +8,19 @@ window.onscroll = () => {
     el.style.backgroundColor = "transparent";
   }
 };
+function reveal() {
+  var el = document.getElementsByClassName("reveal-top");
+  var height = window.innerHeight;
+  var diff = 200;
+  for (let i = 0; i < el.length; i++) {
+    let element = el[i];
+    var elementTop = element.getBoundingClientRect().top;
+    if (elementTop < height - diff) {
+      element.classList.add("active");
+    }
+  }
+}
+window.addEventListener("scroll", reveal);
 
 const menuchange = function (e) {
   console.log(e.checked);
