@@ -6,6 +6,9 @@ body {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
 }
@@ -261,7 +264,7 @@ body {
 }
 .text2 {
   width: 200px;
-  color: #324a51;
+  color: #d3d3d3;
 }
 .projects {
   display: flex;
@@ -342,6 +345,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100%;
 }
 .card:hover::before,
 .card:hover::after {
@@ -353,6 +357,8 @@ body {
 }
 .name {
   color: rgb(241, 240, 240);
+  margin-bottom: 0;
+  text-decoration: underline;
 }
 .list-tools {
   position: relative;
