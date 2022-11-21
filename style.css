@@ -4,7 +4,6 @@ body {
   margin-bottom: 0;
   color: white;
   font-family: "Inter", sans-serif;
-  overflow-x: hidden;
 }
 html {
   scroll-behavior: smooth;
@@ -71,13 +70,12 @@ html {
 }
 #about {
   display: flex;
-  width: 100%;
   justify-content: space-around;
   margin-top: 300px;
   margin-left: 15%;
 }
 .text {
-  width: 65%;
+  width: 75%;
 }
 .title {
   font-family: "Inter";
@@ -291,7 +289,7 @@ html {
   position: absolute;
   bottom: 0;
   left: -40px;
-  width: 100vw;
+  width: calc(100% + 80px);
   height: 300px;
   justify-content: center;
   align-items: center;
