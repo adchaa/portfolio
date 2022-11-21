@@ -23,7 +23,6 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 const menuchange = function (e) {
-  console.log(e.checked);
   if (e.checked) {
     document.getElementsByClassName("navbar")[0].style.left = "0";
   } else {
